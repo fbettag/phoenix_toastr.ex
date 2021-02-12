@@ -92,7 +92,7 @@ defmodule Toastr.Notifier do
     if object_id != needed_id do
       socket
     else
-      Phoenix.LiveView.redirect(socket, to)
+      Phoenix.LiveView.push_redirect(socket, to)
     end
   end
 
